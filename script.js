@@ -45,24 +45,24 @@ const playGame = () => {
     let computerScore = 0
 
     console.log("game started")
-    while (humanScore < 3 && computerScore < 3) {
-        const humanSelection = getHumanChoice()
-        const computerSelection = getComputerChoice()
 
-        console.log("human: ", humanSelection)
-        console.log("computer: ", computerSelection)
+    // const humanSelection = getHumanChoice()
+    const computerSelection = getComputerChoice()
+
+    console.log("human: ", humanSelection)
+    console.log("computer: ", computerSelection)
 
 
-        const result =  playRound(humanSelection, computerSelection)
+    const result =  playRound(humanSelection, computerSelection)
 
-        if(result === "human") {
-            humanScore ++
-        } else if (result ==="computer") {
-            computerScore ++
-        }
-
-        console.log("HS: ", humanScore, "PCS: ", computerScore)
+    if(result === "human") {
+        humanScore ++
+    } else if (result ==="computer") {
+        computerScore ++
     }
+
+    console.log("HS: ", humanScore, "PCS: ", computerScore)
+
 
     console.log("game ended")
 }
