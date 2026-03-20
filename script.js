@@ -37,14 +37,19 @@ const playRound = (humanChoice, computerChoice) => {
     }
 }
 
-
-
 const playGame = () => {
 
     let humanScore = 0
     let computerScore = 0
 
     console.log("game started")
+
+    const humanSelection = ""
+
+    const buttons = document.querySelectorAll("button")
+    
+
+    console.log("human: ", humanSelection)
 
     // const humanSelection = getHumanChoice()
     const computerSelection = getComputerChoice()

@@ -2,20 +2,8 @@
     width: 1280px;
     height: 720px;
     border: 10px solid black;
-    background-color: blue;
+    background-color: #ecf0f1;
 }
 
-.title {
-    text-align: center;
-    background-color: white;
-    margin: 100px;
-    font-family: 30px;
 
-}
-
-.score {
-    width: 1280px;
-    height: 10px;
-    background-color: rebeccapurple;
-}
 
