@@ -6,6 +6,12 @@
     <title>Document</title>
     <script type="module" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -15,24 +21,41 @@
             <p id="title">Rock Paper scissor</p>
         </section>
 
-        <section class="score">
-            <h1 id="gameScore">HS: 0 - PCS: 0</h1>
-        </section>
-
         <section class="Result">
-            <p id="choice">Player: VS PC:</p>
             <p id="gameResult">Result</p>
         </section>
 
+        <section class="score">
+
+            <div id="Box">
+                <div id="choiceBox">
+                    <p id="playerChoice">?</p>
+                </div>
+                <p id="playerScore">Player: 0</p>
+            </div>
+
+            <div id="Box">
+                <div id="choiceBox">
+                    <p id="computerChoice">?</p>
+                </div>
+                <p id="computerScore">Computer: 0</p>
+            </div>
+
+            <!-- <p id="choice">Player: VS PC:</p>
+            <h1 id="gameScore">HS: 0 - PCS: 0</h1> -->
+
+        </section>
+
+        
+
         <section class="choicePlayer">
 
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-            <button id="scissor">Scissor</button>
+            <button id="rock">👊</button>
+            <button id="paper">🤚</button>
+            <button id="scissor">✌️</button>
 
         </section>
         
-
     </div>
 
 </body>

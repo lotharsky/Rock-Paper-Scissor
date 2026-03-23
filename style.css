@@ -1,9 +1,82 @@
-.game_ui {
-    width: 1280px;
-    height: 720px;
-    border: 10px solid black;
-    background-color: #ecf0f1;
+* {
+    font-family: "Pixelify Sans", sans-serif;
 }
 
+
+.game_ui {
+    
+    width: 1280px;
+    height: 720px;
+    border: 10px solid #34495e;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#gameResult {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+
+
+#title {
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#gameScore {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Box {
+   text-align: center;
+   font-size: 1rem;
+}
+
+
+
+#choiceBox {
+   width: 10rem;
+   height: 10rem;
+
+
+
+   font-size: 4rem;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.choicePlayer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+
+}
+
+.choicePlayer button{
+
+    font-size: 4rem;
+    width: 10rem;
+    height: 10rem;
+    border: .4rem solid #34495e;
+    background-color: #ecf0f1;
+}
 
 

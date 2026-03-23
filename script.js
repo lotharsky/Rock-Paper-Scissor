@@ -43,7 +43,7 @@ const playRound = (humanChoice, computerChoice) => {
 
     if(humanChoice === computerChoice) {
         console.log("draw")
-        resultUI.textContent = "Draw"
+        resultUI.textContent = "Draw!"
 
 
         }
@@ -56,7 +56,7 @@ const playRound = (humanChoice, computerChoice) => {
     } 
     else {
         
-        console.log(`You lose! ${computerChoice} beats ${humanChoice}.`)
+        console.log(`You lose!  ${computerChoice} beats ${humanChoice}.`)
         resultUI.textContent = `You lose! ${computerChoice} beats ${humanChoice}.`
 
         return "computer"
@@ -69,16 +69,17 @@ function handleClick (event) {
 
     if (gameOver) return;
 
-    console.log(event.currentTarget.id)
 
     const humanSelection = event.currentTarget.id
-
     const computerSelection = getComputerChoice()
+
 
     console.log("human: ", humanSelection)
     console.log("computer: ", computerSelection)
-    const choiceUI = document.querySelector("#choice")
-    choiceUI.textContent = `Player: ${textToEmoji(humanSelection)} VS PC: ${textToEmoji(computerSelection)}`
+    const playerChoiceUI = document.querySelector("#playerChoice")
+    playerChoiceUI.textContent = textToEmoji(humanSelection)
+    const computerChoiceUI = document.querySelector("#computerChoice")
+    computerChoiceUI.textContent = textToEmoji(computerSelection)
 
 
     const result =  playRound(humanSelection, computerSelection)
@@ -91,9 +92,13 @@ function handleClick (event) {
     }
 
     console.log("HS: ", humanScore, "PCS: ", computerScore)
+
+    const playerScoreUI = document.querySelector("#playerScore")
+    playerScoreUI.textContent = `Player: ${humanScore}`
+
+    const computerScoreUI = document.querySelector("#computerScore")
+    computerScoreUI.textContent = `Computer: ${computerScore}`
     
-    const gameScoreUI = document.querySelector("#gameScore")
-    gameScoreUI.textContent = `HS: ${humanScore} - PCS: ${computerScore}`
 
     if (humanScore === 5 || computerScore === 5) {
         gameOver = true;
